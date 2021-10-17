@@ -93,15 +93,15 @@ footer {
 }
 
 .about-me {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    align-items: center;
-    margin: 0 auto;
-    padding: 60px;
     background-image: url(../images/keyboards.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 .about-hello h2 {
@@ -109,16 +109,67 @@ footer {
     font-size: 50px;
     font-weight: lighter;
     color:var(--tertiary-color);
-    
 }
 
 .about-text {
     background-color:var(--primary-color);
     color:var(--tertiary-color);
     padding:20px;
+    margin: 0 145px;
+    border-radius: 7px;
+    font-size: 20px;
 }
 
 .about-me img {
     border-radius: 15px;
     margin: 20px;
+}
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    flex-direction: row;
+
+}
+
+.my-work h2 {
+    color:var(--tertiary-color);
+    font-size: 50px;
+}
+
+.my-work h3 {
+    color: var(--tertiary-color);
+    font-size: 25px;
+    text-align: center;
+}
+
+.first-app img {
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    header, footer {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
 }
